@@ -5,7 +5,7 @@ import { NavigationContainer } from "@react-navigation/native";
 import TabController from "./src/screens/TabController";
 
 export default () => (
-  <NavigationContainer>
+  <NavigationContainer theme={{ colors: { backgroundColor: "white" } }}>
     <StatusBar barStyle="light-content" />
     <TabController />
   </NavigationContainer>
