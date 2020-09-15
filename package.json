@@ -7,6 +7,7 @@
     "ios": "react-native run-ios",
     "start": "react-native start",
     "test": "jest",
+    "e2e": "detox build --configuration ios.sim.debug && detox test --configuration ios.sim.debug",
     "lint": "eslint ."
   },
   "husky": {
@@ -38,8 +39,10 @@
     "@testing-library/jest-native": "^3.4.2",
     "@testing-library/react-native": "^7.0.2",
     "babel-jest": "^26.3.0",
+    "detox": "^17.5.3",
     "eslint": "^7.9.0",
     "eslint-config-react-native-lit": "^1.0.4",
+    "eslint-plugin-detox": "^1.0.0",
     "eslint-plugin-eslint-comments": "^3.2.0",
     "eslint-plugin-import": "^2.22.0",
     "eslint-plugin-jest": "^24.0.1",
@@ -63,11 +66,52 @@
       "@testing-library/react-native/dont-cleanup-after-each",
       "@testing-library/jest-native/extend-expect"
     ],
+    "testPathIgnorePatterns": [
+      "/node_modules/",
+      "/e2e/"
+    ],
     "collectCoverageFrom": [
       "src/**/*.js"
     ],
     "transformIgnorePatterns": [
       "node_modules/(?!(jest-)?react-native|@react-native-community|react-navigation|@react-navigation/.*)"
     ]
+  },
+  "detox": {
+    "configurations": {
+      "ios.sim.debug": {
+        "binaryPath": "ios/build/Build/Products/Debug-iphonesimulator/UN SDG.app",
+        "build": "xcodebuild -workspace ios/UNSustainableDevelopmentGoals.xcworkspace -scheme UNSustainableDevelopmentGoals -configuration Debug -sdk iphonesimulator -derivedDataPath ios/build",
+        "type": "ios.simulator",
+        "device": {
+          "type": "iPhone X"
+        }
+      },
+      "ios.sim.release": {
+        "binaryPath": "ios/build/Build/Products/Release-iphonesimulator/UN SDG.app",
+        "build": "xcodebuild -workspace ios/UNSustainableDevelopmentGoals.xcworkspace -scheme UNSustainableDevelopmentGoals -configuration Release -sdk iphonesimulator -derivedDataPath ios/build",
+        "type": "ios.simulator",
+        "device": {
+          "type": "iPhone X"
+        }
+      },
+      "android.emu.debug": {
+        "binaryPath": "android/app/build/outputs/apk/debug/app-debug.apk",
+        "build": "cd android && ./gradlew assembleDebug assembleAndroidTest -DtestBuildType=debug && cd ..",
+        "type": "android.emulator",
+        "device": {
+          "avdName": "Pixel_API_27"
+        }
+      },
+      "android.emu.release": {
+        "binaryPath": "android/app/build/outputs/apk/release/app-release.apk",
+        "build": "cd android && ./gradlew assembleRelease assembleAndroidTest -DtestBuildType=release && cd ..",
+        "type": "android.emulator",
+        "device": {
+          "avdName": "Pixel_API_27"
+        }
+      }
+    },
+    "test-runner": "jest"
   }
 }
