@@ -30,7 +30,6 @@ const getTabIcon = ({ focused, color, size }, name) => {
 
 export default () => (
   <Tab.Navigator
-    initialRouteName="The Goals"
     tabBarOptions={{
       activeTintColor: "white",
       inactiveTintColor: "lightgray",
@@ -48,6 +47,7 @@ export default () => (
       name="The Goals"
       component={TheGoalsStack}
       options={{
+        tabBarTestID: "the-goals-tab",
         tabBarIcon: (options) => getTabIcon(options, "ribbon"),
       }}
     />

@@ -17,33 +17,35 @@ import Goal16 from "../../assets/goal_16.png";
 import Goal17 from "../../assets/goal_17.png";
 
 export default class Goal {
-  constructor({ title, image, backgroundColor }) {
+  constructor({ id, title, image, backgroundColor }) {
+    this.id = id;
     this.title = title;
     this.image = image;
     this.backgroundColor = backgroundColor;
   }
 
   static values = [
-    new Goal({ image: Goal01 }),
-    new Goal({ image: Goal02 }),
-    new Goal({ image: Goal03 }),
-    new Goal({ image: Goal04 }),
-    new Goal({ image: Goal05 }),
-    new Goal({ image: Goal06 }),
-    new Goal({ image: Goal07 }),
-    new Goal({ image: Goal08 }),
-    new Goal({ image: Goal09 }),
-    new Goal({ image: Goal10 }),
-    new Goal({ image: Goal11 }),
-    new Goal({ image: Goal12 }),
+    new Goal({ id: "1", image: Goal01 }),
+    new Goal({ id: "2", image: Goal02 }),
+    new Goal({ id: "3", image: Goal03 }),
+    new Goal({ id: "4", image: Goal04 }),
+    new Goal({ id: "5", image: Goal05 }),
+    new Goal({ id: "6", image: Goal06 }),
+    new Goal({ id: "7", image: Goal07 }),
+    new Goal({ id: "8", image: Goal08 }),
+    new Goal({ id: "9", image: Goal09 }),
+    new Goal({ id: "10", image: Goal10 }),
+    new Goal({ id: "11", image: Goal11 }),
+    new Goal({ id: "12", image: Goal12 }),
     new Goal({
+      id: "13",
       title: "Climate Action",
       image: Goal13,
       backgroundColor: "rgb(50, 109, 52)",
     }),
-    new Goal({ image: Goal14 }),
-    new Goal({ image: Goal15 }),
-    new Goal({ image: Goal16 }),
-    new Goal({ image: Goal17 }),
+    new Goal({ id: "14", image: Goal14 }),
+    new Goal({ id: "15", image: Goal15 }),
+    new Goal({ id: "16", image: Goal16 }),
+    new Goal({ id: "17", image: Goal17 }),
   ];
 }

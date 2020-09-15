@@ -30,6 +30,7 @@ export default class HomeScreen extends React.PureComponent {
         style={StyleSheet.absoluteFill}
         bounces={false}
         showsVerticalScrollIndicator={false}
+        testID="the-goals-scrollview"
       >
         <HomeScreenBackground>
           <SafeAreaView>
@@ -41,6 +42,8 @@ export default class HomeScreen extends React.PureComponent {
         <SafeAreaView style={styles.goalsContainerView}>
           {Goal.values.map((goal) => (
             <GoalImagePanel
+              key={goal.id}
+              testID={`the-goals-target-${goal.id}`}
               source={goal.image}
               onPress={() => {
                 if (!goal.title) {

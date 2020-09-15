@@ -14,11 +14,12 @@ const styles = StyleSheet.create({
 });
 
 export default ({ source, style, onPress, ...props }) => (
-  <View style={StyleSheet.flatten([styles.view, style])} {...props}>
+  <View style={StyleSheet.flatten([styles.view, style])}>
     <TouchableOpacity
       activeOpacity={0.6}
       onPress={onPress}
       disabled={onPress == null}
+      {...props}
     >
       <Image style={styles.image} resizeMode="contain" source={source} />
     </TouchableOpacity>
