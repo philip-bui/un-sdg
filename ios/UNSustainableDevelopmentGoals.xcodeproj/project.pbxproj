@@ -17,6 +17,10 @@
 		2DCD954D1E0B4F2C00145EB5 /* UNSustainableDevelopmentGoalsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* UNSustainableDevelopmentGoalsTests.m */; };
 		417F98E7DAC5653CCD89CA08 /* libPods-UNSustainableDevelopmentGoals-UNSustainableDevelopmentGoalsTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7CB8D59D9BD1314FC4971F04 /* libPods-UNSustainableDevelopmentGoals-UNSustainableDevelopmentGoalsTests.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
+		D49F47432510E9B50014942F /* GiorgioSans-Heavy-App.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D49F47412510E85F0014942F /* GiorgioSans-Heavy-App.ttf */; };
+		D49F47442510E9B90014942F /* GiorgioSans-Light-App.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D49F473F2510E85E0014942F /* GiorgioSans-Light-App.ttf */; };
+		D49F47452510E9C30014942F /* Gotham-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = D49F47402510E85F0014942F /* Gotham-Bold.otf */; };
+		D49F47462510E9C50014942F /* Gotham-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = D49F47422510E85F0014942F /* Gotham-Medium.otf */; };
 		E0395D008A97A301AA5AC497 /* libPods-UNSustainableDevelopmentGoals.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A88CCEC58F1E3D6E72537388 /* libPods-UNSustainableDevelopmentGoals.a */; };
 		F20EF2E83202DA2CF326AFC6 /* libPods-UNSustainableDevelopmentGoals-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C6A70EA05A389008D2D85EFF /* libPods-UNSustainableDevelopmentGoals-tvOSTests.a */; };
 		F7FC3D4D3ACA40442F70712B /* libPods-UNSustainableDevelopmentGoals-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E5EA22203C21EAB32F5B3F5F /* libPods-UNSustainableDevelopmentGoals-tvOS.a */; };
@@ -63,6 +67,10 @@
 		87A0F23E405CC3BA03CEFD99 /* Pods-UNSustainableDevelopmentGoals-UNSustainableDevelopmentGoalsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UNSustainableDevelopmentGoals-UNSustainableDevelopmentGoalsTests.debug.xcconfig"; path = "Target Support Files/Pods-UNSustainableDevelopmentGoals-UNSustainableDevelopmentGoalsTests/Pods-UNSustainableDevelopmentGoals-UNSustainableDevelopmentGoalsTests.debug.xcconfig"; sourceTree = "<group>"; };
 		A88CCEC58F1E3D6E72537388 /* libPods-UNSustainableDevelopmentGoals.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-UNSustainableDevelopmentGoals.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6A70EA05A389008D2D85EFF /* libPods-UNSustainableDevelopmentGoals-tvOSTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-UNSustainableDevelopmentGoals-tvOSTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D49F473F2510E85E0014942F /* GiorgioSans-Light-App.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "GiorgioSans-Light-App.ttf"; sourceTree = "<group>"; };
+		D49F47402510E85F0014942F /* Gotham-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gotham-Bold.otf"; sourceTree = "<group>"; };
+		D49F47412510E85F0014942F /* GiorgioSans-Heavy-App.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "GiorgioSans-Heavy-App.ttf"; sourceTree = "<group>"; };
+		D49F47422510E85F0014942F /* Gotham-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gotham-Medium.otf"; sourceTree = "<group>"; };
 		E5EA22203C21EAB32F5B3F5F /* libPods-UNSustainableDevelopmentGoals-tvOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-UNSustainableDevelopmentGoals-tvOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB2E27D64F032B4BF7A6F1D1 /* Pods-UNSustainableDevelopmentGoals.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UNSustainableDevelopmentGoals.release.xcconfig"; path = "Target Support Files/Pods-UNSustainableDevelopmentGoals/Pods-UNSustainableDevelopmentGoals.release.xcconfig"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
@@ -125,6 +133,10 @@
 		09D8945F2AF34C0EB3E7FCF6 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				D49F47412510E85F0014942F /* GiorgioSans-Heavy-App.ttf */,
+				D49F473F2510E85E0014942F /* GiorgioSans-Light-App.ttf */,
+				D49F47402510E85F0014942F /* Gotham-Bold.otf */,
+				D49F47422510E85F0014942F /* Gotham-Medium.otf */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -347,6 +359,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D49F47462510E9C50014942F /* Gotham-Medium.otf in Resources */,
+				D49F47452510E9C30014942F /* Gotham-Bold.otf in Resources */,
+				D49F47432510E9B50014942F /* GiorgioSans-Heavy-App.ttf in Resources */,
+				D49F47442510E9B90014942F /* GiorgioSans-Light-App.ttf in Resources */,
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 			);
@@ -404,7 +420,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "export NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh";
+			shellScript = "export NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh\n";
 		};
 		2D02E4CB1E0B4B27006451C7 /* Bundle React Native Code And Images */ = {
 			isa = PBXShellScriptBuildPhase;
