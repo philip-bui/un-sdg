@@ -24,6 +24,7 @@ const styles = StyleSheet.create({
 
 export default class HomeScreen extends React.PureComponent {
   render() {
+    const { navigation } = this.props;
     return (
       <ScrollView
         style={StyleSheet.absoluteFill}
@@ -39,7 +40,16 @@ export default class HomeScreen extends React.PureComponent {
         </HomeScreenBackground>
         <SafeAreaView style={styles.goalsContainerView}>
           {Goal.values.map((goal) => (
-            <GoalImagePanel source={goal.image} onPress={() => {}} />
+            <GoalImagePanel
+              source={goal.image}
+              onPress={() => {
+                if (!goal.title) {
+                  return;
+                }
+
+                navigation.push("Detail", goal);
+              }}
+            />
           ))}
         </SafeAreaView>
       </ScrollView>
