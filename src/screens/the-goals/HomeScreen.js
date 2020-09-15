@@ -45,6 +45,7 @@ export default class HomeScreen extends React.PureComponent {
               key={goal.id}
               testID={`the-goals-target-${goal.id}`}
               source={goal.image}
+              disabled={!goal.title}
               onPress={() => {
                 if (!goal.title) {
                   return;
