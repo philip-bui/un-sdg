@@ -39,7 +39,7 @@
     "@testing-library/jest-native": "^3.4.2",
     "@testing-library/react-native": "^7.0.2",
     "babel-jest": "^26.3.0",
-    "detox": "^17.5.3",
+    "detox": "^17.8.1",
     "eslint": "^7.9.0",
     "eslint-config-react-native-lit": "^1.0.4",
     "eslint-plugin-detox": "^1.0.0",
