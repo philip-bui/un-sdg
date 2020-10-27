@@ -40,7 +40,7 @@
     "@testing-library/react-native": "^7.0.2",
     "babel-jest": "^26.3.0",
     "detox": "^17.5.3",
-    "eslint": "^7.9.0",
+    "eslint": "^7.12.1",
     "eslint-config-react-native-lit": "^1.0.4",
     "eslint-plugin-detox": "^1.0.0",
     "eslint-plugin-eslint-comments": "^3.2.0",
