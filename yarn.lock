@@ -3161,10 +3161,10 @@ eslint-plugin-react-native@^3.8.1, eslint-plugin-react-native@^3.9.1:
     "@babel/traverse" "^7.7.4"
     eslint-plugin-react-native-globals "^0.1.1"
 
-eslint-plugin-react-redux@^3.0.3, eslint-plugin-react-redux@^3.3.0:
-  version "3.3.0"
-  resolved "https://registry.yarnpkg.com/eslint-plugin-react-redux/-/eslint-plugin-react-redux-3.3.0.tgz#85ee447872a89f47bf996cd9e6e16eaf0fc39080"
-  integrity sha512-DmuDP5EVUXciddfCzu3WQnmQP+eZWRxyuzvuk80casan1HP1PEn+LPcmK8S7ySU1yeneyIFyne9TKiP/p9kr0w==
+eslint-plugin-react-redux@^3.0.3, eslint-plugin-react-redux@^3.3.1:
+  version "3.3.1"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-react-redux/-/eslint-plugin-react-redux-3.3.1.tgz#a9c116bca887039f3e2e4bd8db1df0858028bbff"
+  integrity sha512-ZqG95L2UFr/O9BsOvGxQm/Tok1aLKmR3yrLbUc8v+YVvC+ufxZKRtTI0rIaPASXjqFbCik4gvTzUoRqqMsHAYA==
   dependencies:
     eslint-plugin-react "^7.16.0"
     eslint-rule-composer "^0.3.0"
